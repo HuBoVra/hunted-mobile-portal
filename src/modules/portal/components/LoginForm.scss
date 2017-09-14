@@ -1,38 +1,58 @@
 .header {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 19px;
 }
 
 .subHeader {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.disclaimer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.label {
+    margin-top: 60px;
     text-align: center;
     font-size: 10px;
     font-weight: 300;
 }
 
-.textBox {
-    border: 5px solid #19bee1;
+.passwordForm {
+    position: absolute;
+    width: 300px;
+    top: 35%;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+}
+
+.inputPassword {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 3px solid #19bee1;
     border-radius: 10px;
-    height: 200px;
-    width: 90%;
-    margin: auto;
-    background-color: white;
-    overflow: scroll;
-    box-shadow: 0 5px 0 0 #1299b7;
-
-    h3 {
-        margin-top: 15px;
-    }
-
-    p {
-        margin: 10px;
-    }
+    text-align: center;
+    outline: none;
 }
 
 .loginButton {
+    position: absolute;
     width: 200px;
     height: 40px;
-    margin: auto;
-    margin-top: 20px;
+    bottom: 80px;
+    left: 50%;
+    right: 25%;
+    margin-left: -100px;
     border: 5px solid #19bee1;
     border-radius: 10px;
     background-color: #19bee1;
@@ -52,5 +72,10 @@
     transform: translate(0, 5px);
     -webkit-transform: translate(0, 5px);
     box-shadow: 0 1px 0 0;
+}
+
+::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #b4b4b4;
 }
 

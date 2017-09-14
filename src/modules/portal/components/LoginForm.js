@@ -4,12 +4,23 @@ import styles from "./LoginForm.scss";
 const LoginForm = () => {
   return (
     <div>
-      <h3 class={styles.header}>
-        Je kunt hier inloggen met je team-wachtwoord
-      </h3>
-      <h4 class={styles.subHeader}>
-        Nog geen team-wachtwoord? Meld je bij de organisatie!
-      </h4>
+      <h3 class={styles.header}>Welkom bij het mobile portal!</h3>
+      <h4 class={styles.subHeader}>Log hier in met je team-wachtwoord</h4>
+
+      <form class={styles.passwordForm}>
+        <h4 class={styles.label}>Team-wachtwoord:</h4>
+        <input
+          type="text"
+          id="password"
+          placeholder="Team-wachtwoord"
+          class={styles.inputPassword}
+        />
+        <h4 class={styles.disclaimer}>
+          Het team-wachtwoord vind je op je team-labels. Nog geen team-labels?
+          Meld je bij de organisatie!
+        </h4>
+      </form>
+
       <div class={styles.loginButton}>Inloggen</div>
     </div>
   );

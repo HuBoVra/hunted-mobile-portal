@@ -2,6 +2,7 @@ import { h } from "preact";
 import { Header } from "src/components/Header";
 import { Page, Main } from "src/components/Page";
 import LoadingBox from "../components/LoadingBox";
+import NotificationBox from "../components/NotificationBox";
 
 const InboxPage = () => {
   return (
@@ -14,6 +15,7 @@ const InboxPage = () => {
           <LoadingBox />
         </Main>
       }
+      <NotificationBox />
     </Page>
   );
 };
