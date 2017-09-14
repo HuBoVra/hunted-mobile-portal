@@ -11,6 +11,9 @@
     box-shadow: 0 5px 5px 5px #1299b7;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-name: slideInFromBottom;
 
     h3 {
         color: white;
@@ -23,4 +26,14 @@
 .notificationList {
     overflow: scroll;
     height: 190px;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(+100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
