@@ -1,0 +1,35 @@
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textBox {
+    border: 5px solid #19bee1;
+    border-radius: 10px;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    overflow: scroll;
+    box-shadow: 0 5px 0 0 #1299b7;
+
+    h3 {
+        margin-top: 15px;
+    }
+
+    p {
+        margin: 10px;
+    }
+}
+
+.messageButton:hover {
+    background-color: #1bd5fc;
+    border-color: #1bd5fc;
+}
+
+.messageButton:active {
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    box-shadow: 0 1px 0 0;
+}
+

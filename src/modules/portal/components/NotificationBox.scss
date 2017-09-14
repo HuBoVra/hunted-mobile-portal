@@ -1,0 +1,26 @@
+.notificationBox {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    clear: both;
+    float: none;
+    height: 225px;
+    background-color: #19bee1;
+    box-shadow: 0 5px 5px 5px #1299b7;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    h3 {
+        color: white;
+        margin-bottom: 10px;
+        font-weight: lighter;
+        text-align: center;
+    }
+}
+
+.notificationList {
+    overflow: scroll;
+    height: 190px;
+}
