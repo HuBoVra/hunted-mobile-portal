@@ -21,7 +21,9 @@ const LoginForm = () => {
         </h4>
       </form>
 
-      <div class={styles.loginButton}>Inloggen</div>
+      <a href="/?transition=slide">
+        <div class={styles.loginButton}>Inloggen</div>
+      </a>
     </div>
   );
 };
