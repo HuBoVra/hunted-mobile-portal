@@ -12,7 +12,10 @@ const InboxPage = () => {
       </Header>
       {
         <Main>
-          <LoadingBox />
+          <LoadingBox
+            headerText="Er zijn geen nieuwe berichten."
+            loaderText="CONNECTED!"
+          />
         </Main>
       }
       <NotificationBox />
