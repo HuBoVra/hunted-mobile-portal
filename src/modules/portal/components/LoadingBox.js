@@ -1,11 +1,13 @@
 import { h } from "preact";
 import styles from "./LoadingBox.scss";
 
-const LoadingBox = () => {
+const LoadingBox = props => {
   return (
     <div>
-      <h3 class={styles.header}>Geen nieuwe berichten</h3>
-      <div class={styles.loading} />
+      <h3 class={styles.header}>{props.headerText}</h3>
+      <div class={styles.loading}>
+        <h4 class={styles.loadingText}>{props.loaderText}</h4>
+      </div>
     </div>
   );
 };

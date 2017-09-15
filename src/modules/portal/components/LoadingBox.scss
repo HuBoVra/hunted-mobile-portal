@@ -1,13 +1,14 @@
 .header {
     margin-top: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .loading {
     position: absolute;
     left: 50%;
     top: 45%;
-    margin: -85px 0 0 -85px;
+    margin: -80px 0 0 -80px;
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -26,6 +27,11 @@
     opacity: 0.7;
     animation: rotate 2s infinite linear;
     box-shadow: 0 5px 0 0 #1299b7;
+}
+
+.loadingText {
+    text-align: center;
+    margin-top: 56px;
 }
 
 @keyframes rotate {
