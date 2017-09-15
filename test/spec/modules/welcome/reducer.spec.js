@@ -7,7 +7,7 @@ import {
 describe("reducers", function() {
   let sample = { counter: 100 };
 
-  describe("welcome reducer", function() {
+  describe("welcome reducers", function() {
     it("sets initial counter to 0", function() {
       expect(welcome(undefined, {})).to.eql({ counter: 0 });
     });
