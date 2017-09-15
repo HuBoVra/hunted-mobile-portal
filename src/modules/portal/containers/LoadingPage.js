@@ -6,6 +6,15 @@ export class LoadingPage extends Component {
     super();
   }
 
+  const redirectAfterLoading = () => {
+    this.props.history.push("/");
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (!nextProps.isLoading) {
+      this.redirectAfterLoading();
+    }
+  }
   render() {
     return (
       <LoadingBox headerText="Data wordt opgehaald" loaderText="LOADING..." />
@@ -13,4 +22,10 @@ export class LoadingPage extends Component {
   }
 }
 
-export default LoadingPage;
+const mapStateToProps = state => {
+  return {
+    isLoading: state.isLoading
+  };
+};
+
+export default connect(mapStateToProps)(LoadingPage);

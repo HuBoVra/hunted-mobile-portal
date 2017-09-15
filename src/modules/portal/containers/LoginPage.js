@@ -1,4 +1,6 @@
 import { h } from "preact";
+import { connect } from "preact-redux";
+
 import { Header } from "src/components/Header";
 import { Page, Main } from "src/components/Page";
 import LoginForm from "../components/LoginForm";
