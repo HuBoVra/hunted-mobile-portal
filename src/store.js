@@ -1,9 +1,8 @@
 import { createStore, combineReducers } from "redux";
-import { welcome } from "src/modules/welcome/reducer";
+import { messageReducer } from "src/modules/portal/reducers/messageReducer";
 
 const rootReducer = combineReducers({
-  welcome
-  // additional reducers would be added here
+  messageReducer
 });
 
 const store = createStore(
